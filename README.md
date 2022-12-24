@@ -1,12 +1,11 @@
 # Mega_List
 ## Introduction:
-Makes text files to act as lists with simple functionalities, such as sorting, starring, and categorizing. 
+Makes or edits text files which act as lists with simple functionalities, such as sorting, starring, and categorizing. 
 To use this program, simply run the jar file and follow the given prompts.
 
 Normal Lists are just txt files that you can shuffle and sort, Star Lists allow for starring the items, which effively places them into their own category.
 Categorized Lists allow for as many categories as you want and name/rename them. Each category is shuffled and sorted independently, and they always stay seperate from one another.
 
-I plan on adding functionality to edit pre-existing lists, but all features included currently work so I figured I might as well put this version out too. 
 
 ## Explanation:
 
@@ -16,4 +15,11 @@ For Normal lists only 1 subarray is used, but it is implemented for Star and Cat
 
 Each type of list has its own class, along with runLists which enters a service loop to display prompts, accepts input, and calls functions.
 
-See the code for a more in depth understanding, it is all quite straightfowards.
+See the code for a more in depth understanding, it is pretty straightfowards.
+
+## Editing:
+
+You can also edit existing txt files as well as creating them. In order to help implement this in a useful way, the program recognizes everything with a
+" [*] " as a star and everything that contains a " : " as a category. 
+
+This then requires not allowing any normal items contain a " [*] " in star lists or a " : " in categorized lists. This is a worthwhile drawback to allow for actually being able to edit previous star or categorized lists as the program can now recognize their stars and categories and initialize them as such.
