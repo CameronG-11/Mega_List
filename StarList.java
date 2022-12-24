@@ -109,7 +109,7 @@ public class StarList extends TheList {
 				myWriter.write(MegaList.get(0).get(i) + "\n");
 
 			myWriter.close();
-			// System.out.println("Successfully wrote to the file.");
+			// Successfully wrote to the file
 		} catch (IOException e) {
 			System.out.println("An error occurred.");
 			e.printStackTrace();
